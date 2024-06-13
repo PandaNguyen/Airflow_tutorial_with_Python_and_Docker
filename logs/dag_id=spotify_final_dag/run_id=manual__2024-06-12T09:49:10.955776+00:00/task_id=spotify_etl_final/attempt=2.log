@@ -1,0 +1,96 @@
+[2024-06-12T09:50:24.251+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-12T09:50:24.299+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spotify_final_dag.spotify_etl_final manual__2024-06-12T09:49:10.955776+00:00 [queued]>
+[2024-06-12T09:50:24.312+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spotify_final_dag.spotify_etl_final manual__2024-06-12T09:49:10.955776+00:00 [queued]>
+[2024-06-12T09:50:24.312+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-06-12T09:50:24.336+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): spotify_etl_final> on 2024-06-12 09:49:10.955776+00:00
+[2024-06-12T09:50:24.347+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=88) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-12T09:50:24.350+0000] {standard_task_runner.py:63} INFO - Started process 90 to run task
+[2024-06-12T09:50:24.355+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'spotify_final_dag', 'spotify_etl_final', 'manual__2024-06-12T09:49:10.955776+00:00', '--job-id', '210', '--raw', '--subdir', 'DAGS_FOLDER/spotify_final_dag.py', '--cfg-path', '/tmp/tmp6btscfe6']
+[2024-06-12T09:50:24.357+0000] {standard_task_runner.py:91} INFO - Job 210: Subtask spotify_etl_final
+[2024-06-12T09:50:24.461+0000] {task_command.py:426} INFO - Running <TaskInstance: spotify_final_dag.spotify_etl_final manual__2024-06-12T09:49:10.955776+00:00 [running]> on host d317f063dba7
+[2024-06-12T09:50:24.637+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='spotify_final_dag' AIRFLOW_CTX_TASK_ID='spotify_etl_final' AIRFLOW_CTX_EXECUTION_DATE='2024-06-12T09:49:10.955776+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-12T09:49:10.955776+00:00'
+[2024-06-12T09:50:24.639+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-12T09:50:24.641+0000] {logging_mixin.py:188} INFO - started
+[2024-06-12T09:50:25.432+0000] {logging_mixin.py:188} INFO -                                          song_name  ...   timestamp
+0                                Muốn Khóc Thật To  ...  2024-06-06
+1                            Ve (Acoustic Version)  ...  2024-06-06
+2                        Siêu Nhân Không Áo Choàng  ...  2024-06-06
+3                             Chạm Gần Thêm Thương  ...  2024-06-06
+4                                        Em Có Thể  ...  2024-06-06
+5                                Tết Này Con Sẽ Về  ...  2024-06-06
+6                                      Bốn Chữ Lắm  ...  2024-06-06
+7                                Dấu Chân Đầu Tiên  ...  2024-06-06
+8                               Luồn Thẳng Vào Tim  ...  2024-06-06
+9                                  Xoay Hè Khác Lạ  ...  2024-06-06
+10                                         Em Xinh  ...  2024-05-24
+11                           Những Lời Hứa Bỏ Quên  ...  2024-05-24
+12                                       Từng Quen  ...  2024-05-24
+13                              Như Anh Đã Thấy Em  ...  2024-05-24
+14             Thương Em Là Điều Anh Không Thể Ngờ  ...  2024-05-24
+15                                         giá như  ...  2024-05-24
+16                                      Nến Và Hoa  ...  2024-05-24
+17                                  Ngày Mai Em Đi  ...  2024-05-24
+18                                 Vai Lan Don Dua  ...  2024-05-24
+19                                        Nàng Thơ  ...  2024-05-24
+20                           Chúng Ta Của Hiện Tại  ...  2024-05-24
+21                                 Là Gì Của Nhau?  ...  2024-05-24
+22  Sinh Ra Đã Là Thứ Đối Lập Nhau (feat. Badbies)  ...  2024-05-24
+23                  Tháng Tư Là Lời Nói Dối Của Em  ...  2024-05-24
+24                                       Tháng Năm  ...  2024-05-24
+25                             Muộn Rồi Mà Sao Còn  ...  2024-05-24
+26                          Anh Đã Quen Với Cô Đơn  ...  2024-05-24
+27                          Hành Trang Chuyện Buồn  ...  2024-05-24
+28                                Yêu Em Rất Nhiều  ...  2024-05-24
+29                                     Chờ Anh Nhé  ...  2024-05-23
+30                                         Từng Là  ...  2024-05-23
+31                                Thích Quá Rùi Nà  ...  2024-05-23
+32                             Tâm Sự Với Người Lạ  ...  2024-05-23
+33                                  Ngày Mai Em Đi  ...  2024-05-23
+34                                            NHẠT  ...  2024-05-23
+35                               Thuận Theo Ý Trời  ...  2024-05-23
+36                                Đợi Chờ Đừng Cáu  ...  2024-05-23
+37                               Xin Đừng Nhấc Máy  ...  2024-05-23
+38                         Em Mới Là Người Yêu Anh  ...  2024-05-23
+39                                       Don't Côi  ...  2024-05-23
+40                  Anh Chưa Thương Em Đến Vậy Đâu  ...  2024-05-23
+41                                          Tri Kỷ  ...  2024-05-23
+42                                  Yêu Được Không  ...  2024-05-23
+43                                      Nếu Anh Đi  ...  2024-05-23
+44                             Sao Em Lại Tắt Máy?  ...  2024-05-23
+45                              Đã Lỡ Yêu Em Nhiều  ...  2024-05-23
+46                                    NOLOVENOLIFE  ...  2024-05-23
+47                             Bôn Ba (Nước Ngoài)  ...  2024-05-23
+48                                           Em Ơi  ...  2024-05-23
+49                            đứa nào làm em buồn?  ...  2024-05-23
+
+[50 rows x 4 columns]
+[2024-06-12T09:50:25.450+0000] {base.py:84} INFO - Using connection ID 'postgre_sql' for task execution.
+[2024-06-12T09:50:25.453+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-12T09:50:25.456+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/spotify_final_dag.py", line 37, in ETL
+    df.to_sql('my_played_tracks', engine, if_exists='replace')
+    ^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'to_sql'
+[2024-06-12T09:50:25.479+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=spotify_final_dag, task_id=spotify_etl_final, run_id=manual__2024-06-12T09:49:10.955776+00:00, execution_date=20240612T094910, start_date=20240612T095024, end_date=20240612T095025
+[2024-06-12T09:50:25.498+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 210 for task spotify_etl_final ('NoneType' object has no attribute 'to_sql'; 90)
+[2024-06-12T09:50:25.539+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-12T09:50:25.564+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-12T09:50:25.567+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
